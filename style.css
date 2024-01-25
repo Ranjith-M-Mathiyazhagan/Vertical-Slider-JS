@@ -1,0 +1,75 @@
+/* Universal Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+
+body {
+  background-color: blueviolet;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.container {
+  width: 400px;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.output {
+  margin-top: 2rem;
+}
+.task {
+  margin-bottom: 1rem;
+  background-color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border-left: 4px solid green;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  background-color: white;
+  padding: 15px 25px;
+  transform: translateX(0);
+  transition: transform 1s ease;
+  visibility: hidden;
+}
+.delete {
+  cursor: pointer;
+  color: blueviolet;
+  font-weight: bold;
+}
+/*JavaScript Animation Styles*/
+.success {
+  visibility: visible;
+  background-color: green;
+  color: white;
+  transform: translateX(100px);
+}
+.error {
+  visibility: visible;
+  background-color: red;
+  color: white;
+  transform: translateX(100px);
+}
